@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+        <meta charset="utf-8"/>
+        <title>Access</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css({.tmp,app}) styles/zols.css -->
+        <link rel="stylesheet" href="styles/zols.css"/>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+<body>
+	<div class="container" th:fragment="content">
+		
+		<h1 th:text="${title}">Title</h1>
+		<p class="alert alert-error">Access denied:
+			you do not have permission for that resource</p>
+		<div th:text="${message}">Fake content</div>
+		<div>Please contact the operator with the above information.</div>
+	</div>
+</body>
+</html>

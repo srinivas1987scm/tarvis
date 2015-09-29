@@ -1,0 +1,21 @@
+{
+    "id": "employee",
+    "title": "Employee Schema",
+    "type": "object",
+    "idField": "name",    
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "salary": {
+            "type": "integer"
+        },
+        "department": {
+            "type": "string"
+        },
+        "isContractor": {
+            "type": "boolean"
+        }
+    },
+    "required": ["name"]
+}
